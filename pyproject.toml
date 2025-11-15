@@ -1,0 +1,19 @@
+[project]
+name = "e2b-lab"
+version = "0.1.0"
+description = "E2B Python 实验项目"
+requires-python = ">=3.12"
+dependencies = ["e2b>=1.0.0", "python-dotenv>=1.0.0"]
+
+[project.optional-dependencies]
+dev = ["basedpyright>=1.0.0", "ruff>=0.6.0"]
+
+[tool.basedpyright]
+typeCheckingMode = "standard"
+pythonVersion = "3.12"
+venvPath = "."
+venv = ".venv"
+
+[tool.ruff]
+line-length = 88
+target-version = "py312"
